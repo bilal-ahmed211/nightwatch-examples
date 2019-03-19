@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="login-tests.login-expect-style-test"
+    errors="0" failures="0" hostname="" id="" package="login-tests" skipped="0"
+    tests="1" time="11.84" timestamp="">
+  
+    <testcase name="Simple Login Test - Expect Style" classname="login-tests.login-expect-style-test" time="11.84" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

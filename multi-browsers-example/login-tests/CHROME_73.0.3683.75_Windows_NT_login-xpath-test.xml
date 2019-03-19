@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="1">
+
+  <testsuite name="login-tests.login-xpath-test"
+    errors="0" failures="0" hostname="" id="" package="login-tests" skipped="0"
+    tests="1" time="4.719" timestamp="">
+  
+    <testcase name="Simple Login Test - Using Xpath" classname="login-tests.login-xpath-test" time="4.719" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
