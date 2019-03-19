@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="4">
+
+  <testsuite name="login.test"
+    errors="0" failures="0" hostname="" id="" package="login.test" skipped="0"
+    tests="4" time="16.14" timestamp="">
+  
+    <testcase name="Simple Login Test" classname="login.test" time="1.401" assertions="5">
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Try Login with Valid Email and Blank Password" classname="login.test" time="4.426" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Test Login with Invalid Email and Valid Password" classname="login.test" time="4.549" assertions="2">
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Try login with valid credentials" classname="login.test" time="5.764" assertions="4">
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>
