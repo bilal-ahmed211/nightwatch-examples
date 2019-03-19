@@ -1,12 +1,6 @@
 {
-  "src_folders": [
-    "tests"
-  ],
+  "src_folders": ["tests"],
   "output_folder": "reports",
-  "test_workers": {
-    "enabled": false,
-    "workers": "3"
-  },
   "live_output": false,
   "selenium": {
     "start_process": true,

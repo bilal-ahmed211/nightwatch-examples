@@ -11,10 +11,7 @@ module.exports = {
             .click('button[type=submit]')
             .pause(3000)
             .assert.title('Home Page - EMS')
-            .pause(3000)
-            .click('#logoutForm > ul > li:nth-child(2) > button')
-            .pause(2000)
-            //.assert.containsText('#PageContent > div > h1', 'xyz')
+        
 
     },
     'Try login with Blank Credentials': function (browser) {

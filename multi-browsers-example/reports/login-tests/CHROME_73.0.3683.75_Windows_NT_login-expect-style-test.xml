@@ -5,9 +5,9 @@
 
   <testsuite name="login-tests.login-expect-style-test"
     errors="0" failures="0" hostname="" id="" package="login-tests" skipped="0"
-    tests="1" time="10.11" timestamp="">
+    tests="1" time="7.012" timestamp="">
   
-    <testcase name="Simple Login Test - Expect Style" classname="login-tests.login-expect-style-test" time="10.11" assertions="5">
+    <testcase name="Simple Login Test - Expect Style" classname="login-tests.login-expect-style-test" time="7.012" assertions="5">
 
     
 
