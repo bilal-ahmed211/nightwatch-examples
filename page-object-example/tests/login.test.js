@@ -11,7 +11,7 @@ module.exports = {
 
   'Try Login with Valid Email and Blank Password': function (browser) {
     var login = browser.page.loginPage();
-    login.checkWithValidEmailAndBlankPassword('admin@admin', '');
+    login.checkWithValidEmailAndBlankPassword(data.username, '');
 
   },
   'Test Login with Invalid Email and Valid Password': function (browser) {

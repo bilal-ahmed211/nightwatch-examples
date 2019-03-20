@@ -6,11 +6,10 @@ module.exports = {
         .verify.title('Log in - EMS')
         .useXpath()
         .waitForElementVisible('//input[@id="Input_Email"]', 2000)
-        .setValue('//input[@id="Input_Email"]', 'admin@admin')
-        .setValue('//input[@id = "Input_Password"]', '@Password1')
+        .setValue('//input[@id="Input_Email"]', 'bhtest18@gmail.com')
+        .setValue('//input[@id = "Input_Password"]', '@Datum123')
         .click('//button[@type="submit"]')
         .pause(3000)
         .assert.title('Home Page - EMS')
-    
     }
 }
