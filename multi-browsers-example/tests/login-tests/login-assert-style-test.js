@@ -1,6 +1,6 @@
 module.exports = {
     '@tags': ['assertStyle'],
-    'Simple Login Test - Assert Style - Css Selector': function (browser) {
+    'Simple Login Test - Assert Style': function (browser) {
         browser
             .url('http://10.10.10.2:8081')
             .waitForElementVisible('body', 3000)
@@ -11,8 +11,6 @@ module.exports = {
             .click('button[type=submit]')
             .pause(3000)
             .assert.title('Home Page - EMS')
-        
-
     },
     'Try login with Blank Credentials': function (browser) {
         browser
