@@ -1,0 +1,15 @@
+{
+  "name": "nightwatch-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "nightwatch.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "nightwatch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
