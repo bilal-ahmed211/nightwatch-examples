@@ -1,28 +1,37 @@
-var data = require('../data/login')
+
 module.exports = {
+  "@tags": ['login-test'],
   before: function (browser) {
     var ems = browser.page.loginPage();
     ems.navigate();
   },
-  'Simple Login Test': function (browser) {
+  'Try Login with Blank credentials': function (browser) {
     var login = browser.page.loginPage();
     login.checkLoginWithBlankCredentials();
   },
-
   'Try Login with Valid Email and Blank Password': function (browser) {
     var login = browser.page.loginPage();
-    login.checkWithValidEmailAndBlankPassword(data.username, '');
+    var data = browser.globals;
+    login.checkWithValidEmailAndBlankPassword(data.login.username, '');
 
   },
   'Test Login with Invalid Email and Valid Password': function (browser) {
     var login = browser.page.loginPage();
-    login.checkWithInvalidEmailAndValidPassword(data.username, data.password)
+    var data = browser.globals;
+    login.checkWithInvalidEmailAndValidPassword(data.login.wrongUsername, data.login.password)
   },
   'Try login with valid credentials': function (browser) {
     var login = browser.page.loginPage();
+    var data = browser.globals;
     login.navigate()
-      .emsLoginCheck(data.username, data.password);
+      .emsLoginCheck(data.login.username, data.login.password);
   },
+   'Try login with valid credentials': function (browser) {
+     var login = browser.page.loginPage();
+     var data = browser.globals;
+     login.navigate()
+       .emsLoginCheck(data.login.username, data.login.password);
+   },
 
 
 

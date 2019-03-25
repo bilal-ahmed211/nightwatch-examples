@@ -22,7 +22,9 @@ var page = {
         }, 
         checkWithValidEmailAndBlankPassword: function (username, pass) {
             return this.pause(2000)
+            .clearValue('@email')
             .setValue('@email', username)
+            .clearValue('@password')
             .setValue('@password', pass)
             .click('@submit')
             .pause(2000)
@@ -31,11 +33,14 @@ var page = {
         },
         checkWithInvalidEmailAndValidPassword: function (username, pass) {
             return this.pause(2000)
+            .clearValue('@email')
+            .pause(2000)
             .setValue("@email", username)
+            .clearValue('@password')
             .setValue("@password", pass)
             .click("@submit")
             .pause(2000)
-            .waitForElementPresent("@invalidEmailMsg", 3000)
+            .waitForElementVisible("@invalidEmailMsg", 3000)
             .assert.containsText('@invalidEmailMsg', 'The Email field is not a valid e-mail address.')
         }, 
         emsLoginCheck: function (username, password) {
@@ -43,7 +48,9 @@ var page = {
             .waitForElementVisible('body', 3000)
             .waitForElementPresent('@email', 2000)
             .verify.title('Log in - EMS')
+            .clearValue('@email')
             .setValue('@email', username)
+            .clearValue('@password')
             .setValue('@password', password)
             .click('@submit')
             .pause(3000)
