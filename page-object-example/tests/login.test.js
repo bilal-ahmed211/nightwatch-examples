@@ -26,6 +26,7 @@ module.exports = {
     login.navigate()
       .emsLoginCheck(data.login.username, data.login.password);
   },
+  
    'Try login with valid credentials': function (browser) {
      var login = browser.page.loginPage();
      var data = browser.globals;
