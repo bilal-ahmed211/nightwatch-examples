@@ -20,36 +20,36 @@ var page = {
             .assert.containsText('@emailErrorMsg', 'The Email field is required')
             .assert.containsText('@passErrorMsg', 'The Password field is required.')
         }, 
-        checkWithValidEmailAndBlankPassword: function (username, pass) {
+        checkWithValidEmailAndBlankPassword: function (email, password) {
             return this.pause(2000)
             .clearValue('@email')
-            .setValue('@email', username)
+            .setValue('@email', email)
             .clearValue('@password')
-            .setValue('@password', pass)
+            .setValue('@password', password)
             .click('@submit')
             .pause(2000)
             .assert.elementPresent('@passErrorMsg')
             .assert.containsText('@passErrorMsg', 'The Password field is required.')
         },
-        checkWithInvalidEmailAndValidPassword: function (username, pass) {
+        checkWithInvalidEmailAndValidPassword: function (email, password) {
             return this.pause(2000)
             .clearValue('@email')
             .pause(2000)
-            .setValue("@email", username)
+            .setValue("@email", email)
             .clearValue('@password')
-            .setValue("@password", pass)
+            .setValue("@password", password)
             .click("@submit")
             .pause(2000)
             .waitForElementVisible("@invalidEmailMsg", 3000)
             .assert.containsText('@invalidEmailMsg', 'The Email field is not a valid e-mail address.')
         }, 
-        emsLoginCheck: function (username, password) {
+        emsLoginCheck: function (email, password) {
             return this.pause(2000)
             .waitForElementVisible('body', 3000)
             .waitForElementPresent('@email', 2000)
             .verify.title('Log in - EMS')
             .clearValue('@email')
-            .setValue('@email', username)
+            .setValue('@email', email)
             .clearValue('@password')
             .setValue('@password', password)
             .click('@submit')

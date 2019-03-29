@@ -1,6 +1,6 @@
 
 module.exports = {
-  "@tags": ['login-test'],
+  "@tags": ['page-object-login-test'],
   before: function (browser) {
     var ems = browser.page.loginPage();
     ems.navigate();
