@@ -5,7 +5,7 @@ module.exports = {
         wrongUsername: 'abc.test.com'
     },
     register: {
-        email: 'ems.userA@yopmail.com', 
+        email: 'u7.ems@yopmail.com',
         password: '@Datum123',
         confirmPassword: '@Datum123',
     }
