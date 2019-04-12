@@ -1,6 +1,6 @@
 module.exports = {
     '@tags': ['assert-style-login-test'],
-    'Try Login with Blank Credentials': '' + function (browser) {
+    'Try Login with Blank Credentials':  function (browser) {
         browser
             .url('http://10.10.10.2:8081')
             .waitForElementVisible('body', 3000)

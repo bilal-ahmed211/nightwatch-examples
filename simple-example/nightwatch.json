@@ -31,7 +31,7 @@
                 "browserName": "chrome",
                 "chromeOptions": {
                     "args": [
-                        
+                        "headless"
                     ]
                 }
             }

@@ -1,5 +1,5 @@
 module.exports = {
-    "disabled": true,
+    "disabled": false,
     "@tags": ['xpath-login-test'],
     'Simple Login Test - Using Xpath': function (browser) {
         browser
