@@ -1,8 +1,10 @@
 var page = {
-    url: function () {
+    url: "http://10.10.10.2:8081" ,/*function () {
         return this.api.launch_url + "/login"
-    }//"http://10.10.10.2:8081",
-    elements: {
+            }
+        */
+    
+    elements:{
         appName: "body > nav > div > div.navbar-header > a",
         email: {selector: "#Input_Email"},
         password: {selector: "#Input_Password"},
