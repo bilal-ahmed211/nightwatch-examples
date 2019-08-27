@@ -1,0 +1,20 @@
+{
+  "name": "nightwatch-cucumber-browserstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "nightwatch",
+    "test:browserstack": "nightwatch -c browserstack.conf.js",
+    "test:cucumber": "cucumber-js --require cucumber.conf.js --require features/step-definitions --format node_modules/cucumber-pretty"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chromedriver": "^75.1.0",
+    "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.2",
+    "nightwatch": "^1.1.13",
+    "nightwatch-api": "^2.3.0"
+  }
+}
